@@ -9,10 +9,12 @@ const pool = mysql.createPool({
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
-  connectionLimit: 20, // Aumenta el límite de conexiones para evitar pool lleno
-  acquireTimeout: 120000, // 2 minutos para adquirir conexión
-  waitForConnections: true, // Espera si el pool está lleno
-  queueLimit: 0 // Cola ilimitada
+  connectionLimit: 20,
+  acquireTimeout: 120000,  // 2 minutos
+  connectTimeout: 120000, // 2 minutos
+  timeout: 180000, // 3 minutos
+  waitForConnections: true,
+  queueLimit: 0
 });
 
 async function getSchema() {

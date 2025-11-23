@@ -1,6 +1,7 @@
 // src/layout/MainLayout.jsx
 import React from "react";
 import Navbar from "../components/Navbar";
+import Chatbot from "../components/ChatBot";
 
 function MainLayout({ children, onCategoriaSelect, onSearch }) {
   return (

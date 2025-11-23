@@ -1,11 +1,15 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const { processQuery } = require('./rag/rag');
+const cors = require('cors')
 
 dotenv.config();
 
 const app = express();
 app.use(express.json());
+app.use(cors({
+  origin: ['http://localhost:5173'] 
+}))
 
 app.post('/chat', async (req, res) => {
   const { query } = req.body;

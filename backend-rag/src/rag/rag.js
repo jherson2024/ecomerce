@@ -22,7 +22,7 @@ Eres un experto en SQL. Basado en la pregunta del usuario y el esquema de la BD,
 Pregunta: ${userQuery}
 Esquema:
 ${schema}
-Condiciones: Los campos que tengan que ver con "estado" en las tablas pueden variar entre 'A' o 'I'
+Condiciones: Los campos que tengan que ver con "estado" en las tablas pueden variar entre 'A' o 'I', también considera solo las columnas que existen en la base de datos, no crees campos nuevos, usa explicitamente sin modificar el nombre de las columnas o tablas
 SQL:`;
 
   const sqlQuery = await llm.generateResponse(sqlPrompt);

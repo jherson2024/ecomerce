@@ -11,6 +11,7 @@ import CarritoPage from "../pages/CarritoPage"; // 👈 AÑADIDO
 import CheckoutPage from "../pages/CheckoutPage";
 import PedidoDetailPage from "../pages/PedidoDetailPage";
 import PedidosPage from "../pages/PedidosPage";
+import Chatbot from "../components/ChatBot";
 function App() {
   return (
     <BrowserRouter>
@@ -29,6 +30,7 @@ function App() {
           <Route path="/pedido/:pedido_id" element={<PedidoDetailPage />} />
           <Route path="/pedidos" element={<PedidosPage />} />
         </Routes>
+        <Chatbot />
       </SearchProvider>
     </BrowserRouter>
   );
