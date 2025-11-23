@@ -1,0 +1,26 @@
+# ---------------------------
+# ESTADOS PARA PEDIDOS
+# ---------------------------
+PEDIDO_PENDIENTE_PAGO = 2
+PEDIDO_PAGADO = 3
+PEDIDO_PROCESANDO = 4
+PEDIDO_ENVIADO = 5
+PEDIDO_EN_CAMINO = 6
+PEDIDO_ENTREGADO = 7
+PEDIDO_CANCELADO = 8
+
+# ---------------------------
+# ESTADOS PARA PAGOS
+# ---------------------------
+PAGO_PENDIENTE = 15
+PAGO_APROBADO = 16
+PAGO_RECHAZADO = 17
+PAGO_REEMBOLSADO = 18
+
+# ---------------------------
+# ESTADOS PARA ENVÍO
+# ---------------------------
+ENVIO_PREPARANDO = 20
+ENVIO_EN_CAMINO = 21
+ENVIO_ENTREGADO = 22
+ENVIO_FALLIDO = 23
