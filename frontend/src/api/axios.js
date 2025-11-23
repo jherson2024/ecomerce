@@ -2,9 +2,10 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:8000", // 🔁 cambia si tu backend está desplegado
+  baseURL: "https://leroy-knifelike-grammatically.ngrok-free.dev/", // 🔁 cambia si tu backend está desplegado
   headers: {
     "Content-Type": "application/json",
+    'ngrok-skip-browser-warning': 'true' // Puedes usar cualquier valor, 'true' es común
   },
 });
 
